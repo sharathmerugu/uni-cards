@@ -13,6 +13,21 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      extend: {
+        utilities: {
+          '.full-video': {
+            width: '100vw',
+            height: '100vh',
+            objectFit: 'cover',
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0,
+            zIndex: 0,
+          },
+        },
+      },
     },
   },
   plugins: [],
